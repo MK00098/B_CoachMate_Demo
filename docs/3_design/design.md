@@ -1,10 +1,10 @@
-# CoachMate 디자인 시스템
+# Welldy 디자인 시스템
 
 ## 컨셉
 
 **직관적, 스마트, 간결**
 
-슬로건: `Automate Tasks, Enhance Purpose.`
+슬로건: `Be Smarter, Be Better.`
 
 ## 색상
 
@@ -155,13 +155,14 @@ CTA 버튼
 ## 구조
 
 ```
-CoachMate
-├── Coaching (coaching.html)
-│   └── 운동일지 AI (coaching-log.html)
-└── Career (career.html)
-    ├── 자격증
-    ├── 채용
-    └── 클래스
+Welldy
+├── Smarter (smarter.html)
+│   ├── 운동일지 AI (coaching-log.html)
+│   └── 식단관리 AI (준비 중)
+└── Better (better.html)
+    ├── 교육 (준비 중)
+    ├── 자격증 (준비 중)
+    └── 채용 (준비 중)
 ```
 
 ## 디자인 원칙
