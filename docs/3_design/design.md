@@ -1,4 +1,4 @@
-# Welldy 디자인 시스템
+# CoachMate 디자인 시스템
 
 ## 컨셉
 
@@ -155,7 +155,7 @@ CTA 버튼
 ## 구조
 
 ```
-Welldy
+CoachMate
 ├── Smarter (smarter.html)
 │   ├── 운동일지 AI (coaching-log.html)
 │   └── 식단관리 AI (준비 중)

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretendard 폰트 테스트</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            padding: 20px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            font-weight: 400;
+            color: #86868b;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .card-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #86868b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .log-header {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .log-date {
+            font-size: 14px;
+            color: #86868b;
+            margin-bottom: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+
+        th {
+            font-size: 12px;
+            font-weight: 600;
+            color: #86868b;
+            text-align: left;
+            padding: 6px 0;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        td {
+            font-size: 15px;
+            font-weight: 400;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f2;
+        }
+
+        .coach-note {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #424245;
+        }
+
+        .coach-note li {
+            margin-bottom: 6px;
+            list-style: none;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .coach-note li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        .weight-comparison {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .weight-comparison .system-font {
+            flex: 1;
+            padding: 16px;
+            background: #f5f5f7;
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+        }
+
+        .weight-comparison .pretendard-font {
+            flex: 1;
+            padding: 16px;
+            background: #f5f5f7;
+            border-radius: 12px;
+            font-family: 'Pretendard Variable', Pretendard, sans-serif;
+        }
+
+        .font-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #0071e3;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .weight-sample {
+            margin-bottom: 12px;
+        }
+
+        .weight-sample span {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .closing {
+            font-size: 15px;
+            font-weight: 500;
+            color: #1d1d1f;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f2;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #86868b;
+            margin-top: 32px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CoachMate</h1>
+    <p class="subtitle">Pretendard 폰트 테스트</p>
+
+    <!-- 운동일지 예시 -->
+    <div class="card">
+        <div class="card-title">운동일지</div>
+        <div class="log-header">민수님</div>
+        <div class="log-date">2026.02.09</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>종목</th>
+                    <th>무게</th>
+                    <th>횟수</th>
+                    <th>세트</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>스쿼트</td>
+                    <td>80kg</td>
+                    <td>8회</td>
+                    <td>4세트</td>
+                </tr>
+                <tr>
+                    <td>벤치프레스</td>
+                    <td>60kg</td>
+                    <td>10회</td>
+                    <td>3세트</td>
+                </tr>
+                <tr>
+                    <td>랫풀다운</td>
+                    <td>50kg</td>
+                    <td>12회</td>
+                    <td>3세트</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card-title">코치 노트</div>
+        <ul class="coach-note">
+            <li>스쿼트 마지막 세트에서 폼이 다소 흐트러짐 → 다음 세션에서 집중 체크</li>
+            <li>오른쪽 어깨 불편감 있어 다음 시간 오버헤드 프레스 제외 예정</li>
+            <li>컨디션: 수면 부족으로 전반적 피로감</li>
+        </ul>
+
+        <div class="closing">
+            다음 세션에서는 어깨 상태 확인 후 상체 프로그램 조정하겠습니다. 수고하셨습니다!
+        </div>
+    </div>
+
+    <!-- 폰트 비교 -->
+    <h2>폰트 비교</h2>
+    <div class="weight-comparison">
+        <div class="system-font">
+            <div class="font-label">시스템 폰트</div>
+            <div class="weight-sample">
+                <span style="font-weight: 300">Light 300 운동일지</span>
+                <span style="font-weight: 400">Regular 400 운동일지</span>
+                <span style="font-weight: 500">Medium 500 운동일지</span>
+                <span style="font-weight: 600">SemiBold 600 운동일지</span>
+                <span style="font-weight: 700">Bold 700 운동일지</span>
+            </div>
+            <div class="weight-sample">
+                <span style="font-weight: 400; font-size: 13px;">스쿼트 80kg 8회 4세트</span>
+                <span style="font-weight: 400; font-size: 13px;">벤치프레스 60kg 10회</span>
+                <span style="font-weight: 400; font-size: 13px;">0123456789</span>
+            </div>
+        </div>
+        <div class="pretendard-font">
+            <div class="font-label">Pretendard</div>
+            <div class="weight-sample">
+                <span style="font-weight: 300">Light 300 운동일지</span>
+                <span style="font-weight: 400">Regular 400 운동일지</span>
+                <span style="font-weight: 500">Medium 500 운동일지</span>
+                <span style="font-weight: 600">SemiBold 600 운동일지</span>
+                <span style="font-weight: 700">Bold 700 운동일지</span>
+            </div>
+            <div class="weight-sample">
+                <span style="font-weight: 400; font-size: 13px;">스쿼트 80kg 8회 4세트</span>
+                <span style="font-weight: 400; font-size: 13px;">벤치프레스 60kg 10회</span>
+                <span style="font-weight: 400; font-size: 13px;">0123456789</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Pretendard Variable — CDN dynamic subset</p>
+        <p>SIL Open Font License 1.1 — 상업적 사용 무료</p>
+    </div>
+
+</body>
+</html>

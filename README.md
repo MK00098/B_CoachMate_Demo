@@ -1,4 +1,4 @@
-# Welldy
+# CoachMate
 
 운동전문가를 위한 AI 플랫폼
 
@@ -7,7 +7,7 @@
 ## 서비스 구조
 
 ```
-Welldy
+CoachMate
 ├── Smarter (더 스마트한 업무)
 │   ├── 운동일지 AI
 │   └── 식단관리 AI (준비 중)
@@ -48,7 +48,7 @@ B1_CoachMate_Dev/
 ## 배포
 
 ```
-로컬 개발 (VSCode + Claude Code) → GitHub → Cloudflare Pages → coachmate.pages.dev
+로컬 개발 (VSCode + Claude Code) → GitHub → Cloudflare Pages
 ```
 
 - **GitHub** — 소스코드 버전 관리
@@ -56,4 +56,4 @@ B1_CoachMate_Dev/
 - **HTTPS** — Cloudflare SSL 인증서 자동 제공
 - **CDN** — Cloudflare 글로벌 엣지 서버에서 서빙
 
-배포 URL: https://welldy.pages.dev/
+배포 URL: https://coachmate.pages.dev/
