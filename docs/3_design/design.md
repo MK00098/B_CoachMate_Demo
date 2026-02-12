@@ -24,29 +24,34 @@
 font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
 ```
 
+단위: **px** (Apple 동일 — 디자인 정밀도 우선)
+
 ## 반응형 — 3단계 Breakpoint (Apple 방식)
 
-`clamp()` 대신 `@media` 고정값으로 단계별 제어.
+`@media` 고정값으로 단계별 제어. `clamp()`, `rem` 사용하지 않음.
 
 ### Breakpoint
 | 이름 | 조건 | 대상 |
 |------|------|------|
 | Desktop (Large) | > 1068px | 기본값 |
 | Tablet (Medium) | ≤ 1068px | `@media (max-width: 1068px)` |
-| Mobile (Small) | ≤ 734px | `@media (max-width: 734px)` |
+| Mobile (Small) | ≤ 735px | `@media (max-width: 735px)` |
 
-### 타이포그래피 — 3단계
+### 타이포그래피 — 3단계 (px)
 
 | 요소 | Desktop | Tablet | Mobile |
 |------|---------|--------|--------|
-| Hero h1 | 4.5rem | 3.5rem | 2.5rem |
-| Hero h2 | 1.5rem | 1.3rem | 1.1rem |
-| Section h2 | 3.5rem | 2.8rem | 2.2rem |
-| Section h3 | 1.4rem | 1.2rem | 1rem |
-| Hero slogan | 1.1rem | 1rem | 0.9rem |
-| 본문 (p) | 1rem | 1rem | 1rem |
-| Nav 링크 | 0.85rem | 0.85rem | 0.85rem |
-| Footer | 0.8rem | 0.8rem | 0.8rem |
+| Hero h1 | 72px | 56px | 40px |
+| Hero h2 | 24px | 21px | 18px |
+| Section h2 | 56px | 45px | 35px |
+| Section h3 | 22px | 19px | 16px |
+| Hero slogan | 18px | 16px | 14px |
+| Hero 버튼 | 19px | 18px | 16px |
+| 섹션 버튼 | 15px | 15px | 15px |
+| 본문 (p) | 16px | 16px | 16px |
+| Nav 로고 | 18px | 18px | 18px |
+| Nav 링크 | 14px | 14px | 14px |
+| Footer | 13px | 13px | 13px |
 
 > 큰 제목만 반응형, 본문/UI 텍스트는 고정.
 
@@ -80,7 +85,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
 ```
 padding: 16px 32px (Desktop) → 14px 28px (Tablet) → 12px 24px (Mobile)
 border-radius: 980px (완전 라운드)
-font-size: 1.2rem → 1.1rem → 1rem
+font-size: 19px → 18px → 16px
 max-width: 320px / width: 100%
 ```
 
@@ -88,7 +93,7 @@ max-width: 320px / width: 100%
 ```
 padding: 14px 28px → 12px 24px → 10px 20px
 border-radius: 980px
-font-size: 0.9rem (고정)
+font-size: 15px (고정)
 min-width: 140px
 ```
 

@@ -1,6 +1,7 @@
 /* ============================================
    CoachMate — Global Stylesheet
-   Breakpoints: 1068px (tablet), 734px (mobile)
+   Breakpoints: 1068px (tablet), 735px (mobile)
+   Units: px (Apple style)
    ============================================ */
 
 /* Reset */
@@ -53,7 +54,7 @@ nav.nav-fixed {
     height: 44px;
 }
 .nav-logo {
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 600;
     color: #1d1d1f;
     text-decoration: none;
@@ -63,7 +64,7 @@ nav.nav-fixed {
     gap: 28px;
 }
 .nav-links a {
-    font-size: 0.85rem;
+    font-size: 14px;
     color: #1d1d1f;
     text-decoration: none;
     opacity: 0.8;
@@ -86,7 +87,7 @@ footer {
     max-width: 980px;
     margin: 0 auto;
     padding: 0 22px;
-    font-size: 0.8rem;
+    font-size: 13px;
     color: #86868b;
 }
 .footer-links {
@@ -127,7 +128,7 @@ footer {
     align-items: center;
 }
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: 72px;
     font-weight: 600;
     letter-spacing: -0.03em;
     line-height: 1.05;
@@ -135,7 +136,7 @@ footer {
     margin-bottom: 16px;
 }
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 400;
     color: #86868b;
     margin-bottom: 24px;
@@ -146,7 +147,7 @@ footer {
     color: #ffffff;
     padding: 16px 32px;
     border-radius: 980px;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 500;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -161,7 +162,7 @@ footer {
     transform: scale(1.02);
 }
 .hero-slogan {
-    font-size: 1.1rem;
+    font-size: 18px;
     color: #86868b;
     letter-spacing: 0.02em;
 }
@@ -213,13 +214,13 @@ footer {
     background: #1d1d1f;
 }
 .section h2 {
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 8px;
 }
 .section h3 {
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: 400;
     margin-bottom: 24px;
 }
@@ -227,7 +228,7 @@ footer {
     display: inline-block;
     padding: 14px 28px;
     border-radius: 980px;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: 500;
     transition: transform 0.3s ease, background-color 0.3s ease;
     will-change: transform;
@@ -254,14 +255,14 @@ footer {
     width: 100%;
 }
 .page-header h1 {
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 8px;
     color: #ffffff;
 }
 .page-header p {
-    font-size: 1.4rem;
+    font-size: 22px;
     color: #86868b;
 }
 
@@ -290,12 +291,12 @@ footer {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 .tool-card h2 {
-    font-size: 1.3rem;
+    font-size: 21px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 .tool-card p {
-    font-size: 0.95rem;
+    font-size: 15px;
     color: #86868b;
     margin-bottom: 16px;
 }
@@ -305,7 +306,7 @@ footer {
     color: #ffffff;
     padding: 6px 12px;
     border-radius: 6px;
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 500;
 }
 .tool-tag.coming-soon {
@@ -328,18 +329,18 @@ footer {
     color: #ffffff;
 }
 .about-hero h1 {
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 12px;
 }
 .about-hero p {
-    font-size: 1.4rem;
+    font-size: 22px;
     color: #86868b;
     margin-bottom: 32px;
 }
 .about-hero .slogan {
-    font-size: 1.1rem;
+    font-size: 18px;
     color: #86868b;
     letter-spacing: 0.02em;
 }
@@ -361,7 +362,7 @@ footer {
     margin-bottom: 24px;
 }
 .card h2 {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 24px;
     padding-bottom: 16px;
@@ -375,7 +376,7 @@ footer {
 }
 label {
     display: block;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 500;
     color: #86868b;
     margin-bottom: 8px;
@@ -385,7 +386,7 @@ input, select, textarea {
     padding: 14px 16px;
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 16px;
     font-family: inherit;
     background: #ffffff;
     color: #000000;
@@ -425,7 +426,7 @@ select {
     padding: 14px 24px;
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: transform 0.2s, background 0.2s;
@@ -459,7 +460,7 @@ select {
     margin-top: 24px;
 }
 #result h3 {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -467,7 +468,7 @@ select {
     background: #ffffff;
     padding: 16px;
     border-radius: 12px;
-    font-size: 0.8rem;
+    font-size: 13px;
     overflow-x: auto;
     color: #86868b;
 }
@@ -483,7 +484,7 @@ select {
     max-width: 600px;
 }
 .ad-banner p {
-    font-size: 0.85rem;
+    font-size: 14px;
     color: #86868b;
 }
 
@@ -498,27 +499,27 @@ select {
         min-height: 320px;
     }
     .hero h1 {
-        font-size: 3.5rem;
+        font-size: 56px;
     }
     .hero h2 {
-        font-size: 1.3rem;
+        font-size: 21px;
     }
     .hero-btn {
         padding: 14px 28px;
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .hero-slogan {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .section {
         min-height: 400px;
         padding: 60px 22px;
     }
     .section h2 {
-        font-size: 2.8rem;
+        font-size: 45px;
     }
     .section h3 {
-        font-size: 1.2rem;
+        font-size: 19px;
     }
     .section-btn {
         padding: 12px 24px;
@@ -528,10 +529,10 @@ select {
         min-height: 175px;
     }
     .page-header h1 {
-        font-size: 2.8rem;
+        font-size: 45px;
     }
     .page-header p {
-        font-size: 1.2rem;
+        font-size: 19px;
     }
     .tools-section {
         padding: 50px 0;
@@ -541,13 +542,13 @@ select {
         padding: 26px;
     }
     .about-hero h1 {
-        font-size: 2.8rem;
+        font-size: 45px;
     }
     .about-hero p {
-        font-size: 1.2rem;
+        font-size: 19px;
     }
     .about-hero .slogan {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .form-section {
         padding: 50px 0;
@@ -579,9 +580,9 @@ select {
 }
 
 /* ============================================
-   Mobile (max-width: 734px)
+   Mobile (max-width: 735px)
    ============================================ */
-@media (max-width: 734px) {
+@media (max-width: 735px) {
     .nav-links {
         gap: 16px;
     }
@@ -592,27 +593,27 @@ select {
         min-height: 250px;
     }
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .hero h2 {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .hero-btn {
         padding: 12px 24px;
-        font-size: 1rem;
+        font-size: 16px;
     }
     .hero-slogan {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
     .section {
         min-height: 300px;
         padding: 40px 22px;
     }
     .section h2 {
-        font-size: 2.2rem;
+        font-size: 35px;
     }
     .section h3 {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .section-btn {
         padding: 10px 20px;
@@ -622,10 +623,10 @@ select {
         min-height: 150px;
     }
     .page-header h1 {
-        font-size: 2.2rem;
+        font-size: 35px;
     }
     .page-header p {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .tools-section {
         padding: 40px 0;
@@ -635,19 +636,19 @@ select {
         padding: 20px;
     }
     .tool-card h2 {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
     .tool-card p {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
     .about-hero h1 {
-        font-size: 2.2rem;
+        font-size: 35px;
     }
     .about-hero p {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .about-hero .slogan {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
     .form-section {
         padding: 40px 0;
