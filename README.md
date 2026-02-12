@@ -33,12 +33,15 @@ CoachMate
 
 ```
 B_CoachMate_Demo/
-├── src/                        ← 프론트엔드 (배포 코드)
+├── frontend/                   ← 프론트엔드 (배포 코드)
+│   ├── css/style.css           ← 공통 스타일시트
+│   ├── js/coaching-log.js      ← 운동일지 로직
 │   ├── index.html              ← 홈페이지
 │   ├── smarter.html            ← Smarter 페이지
 │   ├── coaching-log.html       ← AI 운동일지 (입력 폼)
 │   ├── better.html             ← Better 페이지
-│   └── about.html              ← About 페이지
+│   ├── about.html              ← About 페이지
+│   └── font-test.html          ← 폰트 테스트 (개발용)
 ├── functions/                  ← 백엔드 - Cloudflare Functions (추후)
 │   └── api/
 ├── docs/                       ← 내부 문서
@@ -69,7 +72,7 @@ B_CoachMate_Demo/
 ```
 
 - **GitHub** — 소스코드 버전 관리
-- **Cloudflare Pages** — GitHub 연동, push 시 자동 배포 (빌드 출력: `src/`)
+- **Cloudflare Pages** — GitHub 연동, push 시 자동 배포 (빌드 출력: `frontend/`)
 - **HTTPS** — Cloudflare SSL 인증서 자동 제공
 - **CDN** — Cloudflare 글로벌 엣지 서버에서 서빙
 

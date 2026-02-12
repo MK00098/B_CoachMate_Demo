@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운동일지 AI - CoachMate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="nav-logo">CoachMate</a>
+            <div class="nav-links">
+                <a href="smarter.html" class="active">Smarter</a>
+                <a href="better.html">Better</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Task</h1>
+            <p>AI 운동일지</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <!-- 기본 정보 -->
+                <div class="card">
+                    <h2>기본 정보</h2>
+                    <div class="form-group">
+                        <label>날짜</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label>회원 이름</label>
+                        <input type="text" id="memberName" placeholder="회원 이름 입력">
+                    </div>
+                    <div class="form-group">
+                        <label>세션 종류</label>
+                        <select id="sessionType">
+                            <option value="pt">PT (개인 트레이닝)</option>
+                            <option value="group">그룹 수업</option>
+                            <option value="self">자가 운동</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 운동 기록 -->
+                <div class="card">
+                    <h2>운동 기록</h2>
+                    <div class="exercise-list" id="exerciseList">
+                        <div class="exercise-item">
+                            <div class="exercise-row">
+                                <input type="text" placeholder="운동명" class="ex-name">
+                                <input type="number" placeholder="세트" class="ex-sets">
+                                <input type="number" placeholder="횟수" class="ex-reps">
+                                <input type="text" placeholder="무게(kg)" class="ex-weight">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="addExercise()">+ 운동 추가</button>
+                </div>
+
+                <!-- 메모 -->
+                <div class="card">
+                    <h2>메모</h2>
+                    <div class="form-group">
+                        <label>컨디션 / 특이사항</label>
+                        <textarea id="condition" placeholder="회원 컨디션, 통증 부위, 주의사항 등"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>피드백 / 다음 계획</label>
+                        <textarea id="feedback" placeholder="오늘 수업 피드백, 다음 수업 계획 등"></textarea>
+                    </div>
+                </div>
+
+                <!-- 저장 버튼 -->
+                <button class="btn btn-primary" onclick="saveLog()">운동일지 저장</button>
+
+                <!-- 결과 표시 -->
+                <div id="result">
+                    <h3>저장 완료</h3>
+                    <pre id="resultData"></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <div class="container">
+        <div class="ad-banner">
+            <p>광고 영역 (728x90)</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">개인정보 처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                    <span>|</span>
+                    <a href="#">Contact</a>
+                </div>
+                <p>Copyright © 2026 CoachMate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/coaching-log.js"></script>
+</body>
+</html>
